@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Line Coding in Javascript</title>
+    <!--SWEET ALERT 2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--OWNER STYLES-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fuzzy+Bubbles:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>One Line Coding in Javascript</h2>
+        <h4><a href="https://youtu.be/tfdD9y6AMiE">All the credits to: codeSTACKr</a></h4>
+
+        <h3>CAPITALIZE A STRING</h3>
+        // cap is an arrow function and returns: Every sentence should start with a capitalized letter.
+        <div id="capitalize-a-string">
+            <code>cap("every sentence should start with a capitalized letter.")</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('capitalize-a-string')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('capitalize-a-string')">Hide
+                Solution</button>
+
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>COPY TO CLIPBOARD</h3>
+        // The function copytToClipboard will copy the text codeSTACKr.
+        <div id="copy-to-clipboard">
+            <code>copyToClipboard("codeSTACKr")</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('copy-to-clipboard')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('copy-to-clipboard')">Hide
+                Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>FIND UNIQUE VALUES IN ARRAY</h3>
+        // Remove duplicates in array. Result: [1, 2, 3, 4, 5, 6]
+        <div id="remove-duplicates">
+            <code>uniqueValues([ 1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 6, 6, 6 ])</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('remove-duplicates')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('remove-duplicates')">Hide
+                Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>CHECK OF EVEN OR ODD</h3>
+        // Check of even or odd isEven (2) returns true // isEven(3) returns false.
+        <div id="check-even-odd">
+            <code>isEven(2)</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('check-even-odd')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('check-even-odd')">Hide
+                Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>GET AVERAGE OF NUMBERS</h3>
+        // Returns average for any quantity of numbers. (Result: 94.4)
+        <div id="average-of-numbers">
+            <code>average(98, 97, 99, 100, 78)</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('average-of-numbers')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('average-of-numbers')">Hide
+                Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>REVERSE A STRING</h3>
+        // Returns "dlrow olleh"
+        <div id="reverse-string">
+            <code>reverse("hello world")</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('reverse-string')">Show
+                Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('reverse-string')">Hide
+                Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>CONVERT RGB TO HEX</h3>
+        // Explanation: <a
+            href="https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb/5623914#5623914">stackoverflow</a>
+        // About <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift">left
+            shift operator (&lt;&lt;)</a>
+        <div id="rgb-to-hex">
+            <code>rgbToHex(255, 101, 47)</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('rgb-to-hex')">Show Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('rgb-to-hex')">Hide Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>GENERATE RANDOM HEX COLOR</h3>
+         
+        <div id="random-hex-color">
+            <code>randomHexColor()</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('random-hex-color')">Show Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('random-hex-color')">Hide Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>CHECK IF AN ARRAY IS EMPTY</h3>
+         
+        <div id="check-array-empty">
+            <code>arrayIsNotEmpty([2, 3, 4])</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('check-array-empty')">Show Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('check-array-empty')">Hide Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        <h3>SHUFFLE AN ARRAY</h3>
+         // Random shuffle. Sort it randomly.
+        <div id="shuffle-array">
+            <code>shuffleArray([1, 2, 3, 4, 5, 6, 7, 8])</code>
+            <input type="text" class="form-control" id="userCode">
+            <button type="button" class="btn btn-outline" onClick="showSolution('shuffle-array')">Show Solution</button>
+
+            <button type="button" class="btn btn-outline" onClick="hideSolution('shuffle-array')">Hide Solution</button>
+            <div class="form-control hiddenDiv" id="solution">
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
