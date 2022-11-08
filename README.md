@@ -1,4 +1,4 @@
-# ONE LINE JAVASCRIPT CODDING
+# ONE LINE JAVASCRIPT CODING
 
 All the credits to: codeSTACKr:
 https://youtu.be/tfdD9y6AMiE
