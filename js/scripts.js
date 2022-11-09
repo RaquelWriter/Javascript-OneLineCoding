@@ -12,7 +12,7 @@ function showSolution(el) {
         'const copyToClipboard = (text) => navigator.clipboard.writeText(text);';
       break;
     case 'remove-duplicates':
-      element.innerText = 'const uniqueValues = (arr) => [ ...new Set(arr)];';
+      element.innerText = 'const uniqueValues = new Set([...arr]);';
       break;
     case 'check-even-odd':
       element.innerText = 'const isEven = (num) => num % 2 === 0';
